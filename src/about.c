@@ -168,5 +168,6 @@ gchar * get_key_bindings_message(void)
         "-,   zoom out current image.\n"
         "0,   zoom current image to original size.\n"
         "F11, toggle fullscreen mode.\n"
+        "?,   show this help.\n"
     );
 }

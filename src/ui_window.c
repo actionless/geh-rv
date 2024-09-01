@@ -631,6 +631,12 @@ callback_key_press (GtkWidget *widget, GdkEventKey *key, gpointer data)
         }
         ui->is_fullscreen = ui->is_fullscreen == TRUE ? FALSE : TRUE;
         break;
+    case GDK_KEY_question:
+		gchar * message = get_key_bindings_message ();
+		GtkWidget * about_dialog = create_info_window (GTK_WINDOW (ui->window), "Key Bindings", message);
+		gtk_widget_show (about_dialog);
+		g_free(message);
+        break;
     default:
         return FALSE;
         break;

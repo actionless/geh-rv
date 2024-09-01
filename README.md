@@ -62,4 +62,5 @@ See the output of `geh --help` for detals.
  * `-`, zoom out current image.
  * `0`, zoom current image to original size.
  * `F11`, toggle fullscreen mode.
+ * `?`, show help window.
 
